@@ -1,0 +1,157 @@
+/* Code CSS de la page d'accueil*/
+* {
+padding:0px;
+margin:0px;
+}
+a
+{
+	color:#000000; text-decoration:underline;
+}
+a:hover
+{
+	color:#a0c551; text-decoration:underline;
+}
+div, p
+{
+	font:12px arial, helvetica, sans-serif;
+}
+body
+{
+	width:100%; background:#ffffff url('images/background.jpg') repeat-x top center; margin:auto;
+}
+#content
+{
+	width:1014px; height:920px; margin:auto;
+}
+#logo
+{
+	display:block; float:left; width:369px; height:92px; background:url('images/logo.jpg') no-repeat 0px 0px; margin-top:28px; margin-left:43px;
+}
+#logo:hover
+{
+	background:url('images/logo.jpg') no-repeat -369px 0px;
+}
+#menu
+{
+	float:left; width:485px; height:38px; margin-left:74px;
+}
+#bt-accueil{display:block; width:76px; height:38px; float:left; background:url('images/menu/accueil.jpg') no-repeat 0px 0px;}
+#bt-accueil:hover{background:url('images/menu/accueil.jpg') no-repeat -76px 0px;}
+
+#bt-concept{display:block; width:104px; height:38px; float:left; background:url('images/menu/concept.jpg') no-repeat 0px 0px;}
+#bt-concept:hover{background:url('images/menu/concept.jpg') no-repeat -104px 0px;}
+
+#bt-references{display:block; width:97px; height:38px; float:left; background:url('images/menu/references.jpg') no-repeat 0px 0px;}
+#bt-references:hover{background:url('images/menu/references.jpg') no-repeat -97px 0px;}
+
+#bt-tarifs{display:block; width:60px; height:38px; float:left; background:url('images/menu/tarifs.jpg') no-repeat 0px 0px;}
+#bt-tarifs:hover{background:url('images/menu/tarifs.jpg') no-repeat -60px 0px;}
+
+#bt-contact{display:block; width:148px; height:38px; float:left; background:url('images/menu/contact.jpg') no-repeat 0px 0px;}
+#bt-contact:hover{background:url('images/menu/contact.jpg') no-repeat -148px 0px;}
+
+#img-header
+{
+	float:left; width:1014px; height:137px; background:url('images/bandeau.png') no-repeat; margin-top:20px;
+}
+#content-home
+{
+	width:1014px; height:583px; float:left; background:url('images/content-home.jpg') no-repeat; 
+}
+#content-home div
+{
+	width:373px; height:419px; float:left; margin-top:126px; margin-left:44px; padding-top:20px; padding-left:30px; padding-right:30px; 
+}
+#form-rappel
+{
+	float:left; width:383px; height:78px; background:url('images/form-rappel.jpg') no-repeat; margin-top:40px;
+}
+#footer
+{
+	float:left; width:1014px; font-size:11px; color:#878388; margin-top:15px;
+}
+#footer a
+{
+	color:#878388; text-decoration:none;
+}
+#footer a:hover
+{
+	color:#a0c551; text-decoration:underline;
+}
+
+/* PAGE DEMANDE DE DEVIS */
+#content-contact
+{
+	width:912px; height:536px; float:left; background:#f8f6f6; margin-top:27px; margin-left:51px; margin-bottom:20px;
+}
+#txt-contact
+{
+	float:left; width:369px; margin-top:27px; margin-left:27px; 
+}
+#txt-contact span
+{
+	float:left; display:block; margin-left:25px; width:344px; 
+}
+#txt-contact strong
+{
+	color:#88bb3d;
+}
+#formulaire
+{
+	float:left; width:394px; height:420px; border-left:solid 4px #8e8d8d; margin-top:80px; margin-left:50px;
+}
+#formulaire table
+{
+	float:left; line-height:27px; margin-left:40px; 
+}
+#formulaire table td
+{
+	min-width:90px; vertical-align:top; text-align:right;
+}
+#formulaire input, #formulaire textarea
+{
+	resize:none; font:12px arial, helvetica sans-serif;
+}
+
+/* PAGE CONCEPT */
+.txt-concept
+{
+	float:left; width:405px; height:305px; margin-top:10px; margin-left:33px; text-align:justify;
+}
+.txt-concept span
+{
+	color:#88bb3d; font-weight:bold;
+}
+.concept-exemple
+{
+	float:left; width:456px; height:192px; margin-top:40px; text-align:center; font-weight:bold; color:#88bb3d;
+}
+
+/* PAGE REFERENCES */ 
+
+#txt-references
+{
+	float:left; width:873px; height:505px; margin-top:20px; margin-left:17px;
+}
+#txt-references strong
+{
+	color:#88bb3d;
+}
+#txt-references span
+{
+	display:block; text-align:center
+}
+
+
+#txt-tarifs
+{
+	float:left; width:873px; height:505px; margin-top:20px; margin-left:17px; text-align:center;
+}
+#txt-tarifs strong
+{
+	color:#88bb3d; display:block; float:left; text-align:left;
+}
+#txt-tarifs span
+{
+	display:block; text-align:left; float:left;
+}
