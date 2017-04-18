@@ -49,17 +49,21 @@
                         <form id="formcontact" method="POST" action="mail.php">
                             <input type="text" name="Nom" tabindex="10" required placeholder="Nom, prénom :" />
                             <br/>
-                            <input type="text" name="Societe" tabindex="10" required placeholder="Société :" />
+                            <input type="text" name="Societe" tabindex="20" required placeholder="Société :" />
                             <br/>
-                            <input type="text" name="Adresse" tabindex="10" required placeholder="Adresse :" />
+                            <input type="text" name="Adresse" tabindex="30" required placeholder="Adresse :" />
                             <br/>
-                            <input type="text" name="Telephone" tabindex="10" required placeholder="Téléphone :" />
+                            <input type="text" name="Telephone" tabindex="40" required placeholder="Téléphone :" />
                             <br/>
-                            <input type="email" name="Mail" tabindex="30" required placeholder="Mail :" />
+							<input type="text" name="Ville" tabindex="45" required placeholder="Ville :" />
                             <br/>
-                            <input type="text" name="host" id="host" value="OK" style="display:none;" tabindex="55" />
-                            <input type="hidden" name="page" value="devis.php" tabindex="56" />
-                            <textarea name="Message" id="Message" required tabindex="60" placeholder="Message :"></textarea>
+                            <input type="text" name="Code-postal" tabindex="50" required placeholder="Code Postal :" />
+                            <br/>
+                            <input type="email" name="Mail" tabindex="60" required placeholder="Mail :" />
+                            <br/>
+                            <input type="text" name="host" id="host" value="OK" style="display:none;" tabindex="65" />
+                            <input type="hidden" name="page" value="devis.php" tabindex="66" />
+                            <textarea name="Message" id="Message" required tabindex="70" placeholder="Message :"></textarea>
                             <br/>
                             <input type="submit" value="ENVOYER" class="bouton latobold font14 noir uppercase" />
                         </form>
@@ -70,7 +74,7 @@
             </section>
 
             <aside id="map" style="font-size:0;">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d38887.04358962901!2d1.4690309158086354!3d43.57953370662816!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebdb98c393fd9%3A0x2408cb290ae34993!2s5+Avenue+Marcel+Dassault%2C+31500+Toulouse!5e0!3m2!1sfr!2sfr!4v1462368347569" width="100%" height="500" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d38887.04358962901!2d1.4690309158086354!3d43.57953370662816!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebdb98c393fd9%3A0x2408cb290ae34993!2s5+Avenue+Marcel+Dassault%2C+31500+Toulouse!5e0!3m2!1sfr!2sfr!4v1462368347569" width="100%" height="500" style="border:0" style="pointer-events:none;" allowfullscreen></iframe>
             </aside>
 
             <?php include '_footer.php'; ?>

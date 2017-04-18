@@ -60,14 +60,17 @@
 <script type="text/javascript" src="js/skrollr.min.js"></script>
 <script type="text/javascript">
 
-    
         skrollr.init({
             smoothScrolling: false,
             forceHeight: false
         });
     
-    
-    -->
+        $('#map').click(function () {
+            $('#map iframe').css("pointer-events", "auto");
+        });
+        $( "#map" ).mouseleave(function() {
+          $('#map iframe').css("pointer-events", "none"); 
+        }); 
 </script>
 
 </body>
