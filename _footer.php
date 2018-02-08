@@ -8,9 +8,9 @@
                 <br />
                 <br />Tél. 05 61 55 12 11
                 <br />
-                <br />5 Avenue Marcel Dassault
-                <br />Bâtiment A - 6° étage
-                <br />31400 TOULOUSE</p>
+                <br />14 bis Impasse Couzinet
+                <br />1er étage
+                <br />31500 TOULOUSE</p>
 
             <p class="blanc font14">Copyright 2016 - La Poche à Pain
                 <br />Tous droits réservés

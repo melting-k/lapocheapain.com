@@ -30,9 +30,9 @@
                             <br /> Fax. 09 72 32 45 35</p>
                         <p class="latobold font20">contact@lapocheapain.com</p>
                         <p class="vertclair font20">La Poche à Pain
-                            <br /> 5 Avenue Marcel Dassault
-                            <br /> Bât.A - 6° étage
-                            <br /> 31400 TOULOUSE</p>
+                            <br /> 14 bis Impasse Couzinet
+                            <br /> 1er étage
+                            <br /> 31500 TOULOUSE</p>
                         <p class="latobold">Pour toute demande de devis, merci de nous indiquer la quantité désirée, ainsi que le nombre de couleurs du visuel (monochromie / bichromie / trichromie / quadrichromie).</p>
                     </div>
 
