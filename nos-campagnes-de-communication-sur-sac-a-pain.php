@@ -1,7 +1,6 @@
 <?php
-	$current="realisations";
-	$pagename="http://www.lapocheapain.com";
-
+	$pagename="nos-campagnes-de-communication-sur-sac-a-pain.php";
+    $PAGE_name = "realisations";
     include '_header.php';
 ?>
 
@@ -11,7 +10,7 @@
 
             <header class="h370 bg-cuisine" data-0="background-position: center 0px;" data-10000="background-position: center 5000px;">
                 <div id="header-top" class="width960 blanc">
-                    <a href="http://www.lapocheapain.com" title="La Poche à Pain">
+                    <a href="<?php echo $NAV_accueil; ?>" title="La Poche à Pain">
                         <img src="svg/logo-header.svg" alt="Logo La Poche à Pain" width="220" />
                     </a>
 
@@ -24,7 +23,13 @@
             </header>
             <section id="galerie">
                 <div class="center noir">
-                    <p class="font17 mb40">Voici un aperçu des campagnes que nous avons déjà réalisées :</p>
+                    <h1 class="blanc oleo font40">
+                        Les campagnes que nous avons réalisé
+                    </h1>
+                    <p class="font17 mb40 width720">
+                        <br/>
+                        Découvrez ci-dessous une galerie rassemblant quelques unes de nos références, et les campagnes de communication sur lesquelles nous sommes intervenus.<br/> Entreprises locales ou grandes enseignes nationales, ils ont choisi le sac à pain comme support publicitaire, et ont fait confiance à La Poche à Pain pour la prise en charge, la gestion et l'organisation de leur campagne :
+                    </p>
                     <div class="bgblanc">
                         <div class="slider width960">
                             <div>
@@ -139,7 +144,7 @@
 
             <section id="contact" class="bgblanc center">
                 <div class="width960">
-                    <p class="mb25 font18">Pour plus de renseignements,</p>
+                    <p class="mb25 font18 width720">Notre support vous intéresse et vous souhaitez des renseigements complémentaires ?</p>
                     <a href="devis.php" class="bouton noir uppercase latobold font14">Contactez-nous</a>
                 </div>
             </section>

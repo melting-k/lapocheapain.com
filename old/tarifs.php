@@ -32,7 +32,7 @@
 			
 			<div id="menu">
 				<a href="index.php" id="bt-accueil"></a>
-				<a href="concept.php" id="bt-concept"></a>
+				<a href="<?php echo $NAV_concept; ?>" id="bt-concept"></a>
 				<a href="references.php" id="bt-references"></a>
 				<a href="tarifs.php" id="bt-tarifs"></a>
 				<a href="contact.php" id="bt-contact"></a>

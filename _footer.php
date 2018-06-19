@@ -17,18 +17,16 @@
                 <br />
                 <br />Impression sur sacs à pain - Imprimerie poche à pain<br />Poches à pain publicitaire - Publicité sur sacs à pain<br />Publicité sur poche à pain Toulouse
                 <br />
-                <br /><a href="http://www.melting-k.fr" target="_blank" title="Création de sites internet à Toulouse">Une création Melting K</a></p>
-            <a href="http://www.lapocheapain.com" title="La Poche à Pain"><img src="svg/logo-footer.svg" alt="logo la Poche à Pain" width="150" /></a>
+                <br />
+                <a href="http://www.melting-k.fr" target="_blank" title="Création de sites internet à Toulouse">Une création Melting K</a> - <a href="<?php echo $NAV_mentions; ?>" title="<?php echo $NAV_TITLE_mentions; ?>">Mentions légales</a>
+            </p>
+            <a href="<?php echo $NAV_accueil; ?>" title="La Poche à Pain"><img src="svg/logo-footer.svg" alt="logo la Poche à Pain" width="150" /></a>
     </div>
 
 </footer>
 
 
 </div>
-
-
-
-<script type="text/javascript" src="js/prefixfree.js"></script>
 
 <!--[if lt IE 11]>
 			<script src="js/placeholder.js"></script>
@@ -45,7 +43,6 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $('.slider').slick({
-            /*setting - name: setting - value*/
             dots: false,
             draggable: false,
             fade: true,
@@ -54,23 +51,32 @@
             autoplaySpeed: 4000,
             pauseOnHover: false
         });
+        $('#formcontact').on('submit', function() {
+            if (document.getElementById('consentement').checked) 
+            {
+                return true;
+            } else {
+                $('p.consentement').addClass('error');
+                return false;
+            }
+        });
     });
+    function removeConsentement() {
+        if (document.getElementById('consentement').checked) 
+        {
+            $('p.consentement').removeClass('error');
+        } else {
+            $('p.consentement').addClass('error');
+        }
+    }
 </script>
 
 <script type="text/javascript" src="js/skrollr.min.js"></script>
 <script type="text/javascript">
-
         skrollr.init({
             smoothScrolling: false,
             forceHeight: false
         });
-    
-        $('#map').click(function () {
-            $('#map iframe').css("pointer-events", "auto");
-        });
-        $( "#map" ).mouseleave(function() {
-          $('#map iframe').css("pointer-events", "none"); 
-        }); 
 </script>
 
 </body>

@@ -1,7 +1,6 @@
 <?php
-	$current="devis";
-	$pagename="devis.php";
-
+	$pagename="demande-de-devis-sac-a-pain-publicitaire.php";
+    $PAGE_name = "contact";
     include '_header.php';
 ?>
 
@@ -9,7 +8,7 @@
         <div id="skrollr-body">
             <header class="h370 bg-boulangerie" data-0="background-position: center 0px;" data-10000="background-position: center 5000px;">
                 <div id="header-top" class="width960 blanc">
-                    <a href="http://www.lapocheapain.com" title="La Poche à Pain">
+                    <a href="<?php echo $NAV_accueil; ?>" title="La Poche à Pain">
                         <img src="svg/logo-header.svg" alt="Logo La Poche à Pain" width="220" />
                     </a>
 
@@ -25,7 +24,7 @@
                 <div id="form-contact" class="width960 noir font16 lato">
                     <div id="devis-txt">
                         <h1 class="oleo font40 vertclair">Contacter la Poche à Pain</h1>
-                        <p>Pour toute demande de renseignements, de devis ou de prise de rendez-vous, vous pouvez contacter la Poche à Pain par téléphone, mail ou en remplissant le formulaire de contact ci-contre.</p>
+                        <p>Pour toute demande de renseignements, de devis ou de prise de rendez-vous, vous pouvez contacter la Poche à Pain par téléphone, par e-mail ou en remplissant le formulaire de contact ci-contre.</p>
                         <p class="font30 vertfonce">Tél. 05 61 55 12 11
                             <br /> Fax. 09 72 32 45 35</p>
                         <p class="latobold font20">contact@lapocheapain.com</p>
@@ -62,20 +61,30 @@
                             <input type="email" name="Mail" tabindex="60" required placeholder="Mail :" />
                             <br/>
                             <input type="text" name="host" id="host" value="OK" style="display:none;" tabindex="65" />
-                            <input type="hidden" name="page" value="devis.php" tabindex="66" />
+                            <input type="hidden" name="page" value="<?php echo $NAV_contact; ?>" tabindex="66" />
                             <textarea name="Message" id="Message" required tabindex="70" placeholder="Message :"></textarea>
                             <br/>
-                            <input type="submit" value="ENVOYER" class="bouton latobold font14 noir uppercase" />
+                            <p>
+                                <input type="checkbox" id="consentement" name="Consentement" value="Exploitation des données dans le cadre de la demande de contact et de la relation commerciale pouvant en découler." onclick="removeConsentement();">
+                            </p>
+                            <p class="consentement">
+                                En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la demande de contact, et de la relation commerciale pouvant en découler.
+                            </p>
+                            <br/>
+                            <input type="submit" value="ENVOYER" id="submit" class="bouton latobold font14 noir uppercase" />
+                            <br/>
+                            <p>
+                                Pour connaître et exercer vos droits, notamment de retrait de votre consentement à l'utilisation des données collectées par ce formulaire, veuillez consulter <a href="<?php echo $NAV_mentions; ?>" class="vertclair" title="<?php echo $NAV_TITLE_mentions; ?>" target="_blank">notre politique de confidentialité</a>.
+                            </p>
                         </form>
-
+                        
                         <?php } ?>
 
                 </div>
             </section>
 
             <aside id="map" style="font-size:0;">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.1526947210095!2d1.4939336386897626!3d43.579688437749304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebda5143f253f%3A0xb69f5fc54c14000c!2s14+Impasse+Ren%C3%A9+Couzinet%2C+31500+Toulouse!5e0!3m2!1sfr!2sfr!4v1518108017699" width="100%" height="500" style="border:0;pointer-events:none;" allowfullscreen></iframe>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d38887.04358962901!2d1.4690309158086354!3d43.57953370662816!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebdb98c393fd9%3A0x2408cb290ae34993!2s5+Avenue+Marcel+Dassault%2C+31500+Toulouse!5e0!3m2!1sfr!2sfr!4v1462368347569"></iframe>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.1526947210095!2d1.4939336386897626!3d43.579688437749304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebda5143f253f%3A0xb69f5fc54c14000c!2s14+Impasse+Ren%C3%A9+Couzinet%2C+31500+Toulouse!5e0!3m2!1sfr!2sfr!4v1518108017699" width="100%" height="500" style="border:0;" allowfullscreen></iframe>
             </aside>
 
             <?php include '_footer.php'; ?>
