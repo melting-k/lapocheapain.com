@@ -1,0 +1,29 @@
+# SUPPRESSION DU DOMAINE SANS LES WWW
+RewriteEngine on
+Rewritecond %{HTTP_HOST} ^lapocheapain.com$
+Rewriterule ^(.*) https://www.lapocheapain.com/$1 [QSA,L,R=301]
+
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.lapocheapain.com/$1 [R,L]
+
+# REDIRIGE INDEX.PHP DE LA PAGE D ACCUEIL (UNIQUEMENT) 
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ https://www.lapocheapain.com/$1 [R=301,L]
+
+# COMPRESSION DES FICHIERS
+SetOutputFilter DEFLATE
+
+# MISE EN CACHE DU NAVIGATEUR
+<filesMatch ".(jpg|jpeg|png|gif|ico|txt|css|js|woff|eot|svg|ttf)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+
+# ERREURS 404
+ErrorDocument 404 https://www.lapocheapain.com
+
+# EMPÊCHER LE LISTING DES RÉPERTOIRES
+Options -Indexes
+
+Redirect permanent /concept.php https://www.lapocheapain.com/le-concept-de-sac-a-pain-publicitaire.php
+Redirect permanent /realisations.php https://www.lapocheapain.com/nos-campagnes-de-communication-sur-sac-a-pain.php
+Redirect permanent /devis.php https://www.lapocheapain.com/demande-de-devis-sac-a-pain-publicitaire.php
