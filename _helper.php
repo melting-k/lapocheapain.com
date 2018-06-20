@@ -6,22 +6,27 @@ switch ($PAGE_name) {
     case 'accueil':
         $META_title = "Sacs à pain publicitaires | La Poche à Pain";
         $META_description = "La Poche à Pain : impression de publicité sur sacs à pain. Découvrez un support de communication impactant & innovant !";
+        $META_robots = 'index, follow';
         break;
     case 'concept':
         $META_title = "La publicité sur sacs à pain : comment ça marche ?";
         $META_description = "Découvrez le concept de la poche à pain publicitaire : un support efficace pour vos campagnes de communication, pour un ciblage très précis de vos prospects";
+        $META_robots = 'index, follow';
         break;
     case 'realisations':
         $META_title = "Les campagnes de communication sur sacs à pain que nous avons réalisé";
         $META_description = "Pour avoir un aperçu des campagnes de communication que nous avons réalisé pour nos clients et connaitre nos références, visionnez notre galerie de réalisations";
+        $META_robots = 'index, follow';
         break;
     case 'contact':
         $META_title = "Demandez un devis pour votre campagne de communication sur sacs à pain";
         $META_description = "Notre support de communication vous intéresse ? Demandez-nous un devis pour l'impression de votre campagne de communication sur sacs à pain !";
+        $META_robots = 'index, follow';
         break;
     case 'mentions':
         $META_title = "Les mentions légales et politique de confidentialité de notre site";
         $META_description = "Les informations et mentions légales de notre site internet www.lapocheapain.com, ainsi que notre politique de confidentialité pour la protection de vos données";
+        $META_robots = 'noindex, follow';
         break;
     default:
         $META_description = '';

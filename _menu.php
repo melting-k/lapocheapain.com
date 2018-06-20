@@ -14,3 +14,6 @@
         </li>
     </ul>
 </nav>
+<button id="bt-menu" class="mobile">
+    <span class="barre-menu"></span>
+</button>

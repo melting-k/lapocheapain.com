@@ -9,7 +9,7 @@
             <header class="h370 bg-boulangerie" data-0="background-position: center 0px;" data-10000="background-position: center 5000px;">
                 <div id="header-top" class="width960 blanc">
                     <a href="<?php echo $NAV_accueil; ?>" title="La Poche à Pain">
-                        <img src="svg/logo-header.svg" alt="Logo La Poche à Pain" width="220" />
+                        <img src="svg/logo-header.svg" alt="Logo La Poche à Pain" width="220" id="logo"/>
                     </a>
 
                     <?php include '_menu.php'; ?>
@@ -24,10 +24,9 @@
                 <div id="form-contact" class="width960 noir font16 lato">
                     <div id="devis-txt">
                         <h1 class="oleo font40 vertclair">Contacter la Poche à Pain</h1>
-                        <p>Pour toute demande de renseignements, de devis ou de prise de rendez-vous, vous pouvez contacter la Poche à Pain par téléphone, par e-mail ou en remplissant le formulaire de contact ci-contre.</p>
-                        <p class="font30 vertfonce">Tél. 05 61 55 12 11
-                            <br /> Fax. 09 72 32 45 35</p>
-                        <p class="latobold font20">contact@lapocheapain.com</p>
+                        <p>Pour toute demande de renseignements, de devis ou de prise de rendez-vous, vous pouvez contacter la Poche à Pain par téléphone, par e-mail ou en remplissant le formulaire de contact <span class="desktop">ci-contre</span><span class="mobile">ci-dessous</span>.</p>
+                        <p class="font30 vertfonce"><span class="desktop">Tél. 05 61 55 12 11</span><a href="tel:0561551211" class="mobile vertfonce">Tél. 05 61 55 12 11</a></p>
+                        <p class="latobold font20"><a href="mailto:contact@lapocheapain.com" class="noir">contact@lapocheapain.com</a></p>
                         <p class="vertclair font20">La Poche à Pain
                             <br /> 14 bis Impasse Couzinet
                             <br /> 1er étage

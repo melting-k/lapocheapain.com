@@ -9,7 +9,7 @@
             <header class="h370 bg-mentions" data-0="background-position: center 0px;" data-10000="background-position: center 5000px;">
                 <div id="header-top" class="width960 blanc">
                     <a class="vertclair" href="<?php echo $NAV_accueil; ?>" title="La Poche à Pain">
-                        <img src="svg/logo-header.svg" alt="Logo La Poche à Pain" width="220" />
+                        <img src="svg/logo-header.svg" alt="Logo La Poche à Pain" width="220" id="logo"/>
                     </a>
 
                     <?php include '_menu.php'; ?>

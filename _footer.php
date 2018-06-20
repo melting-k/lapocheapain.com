@@ -1,7 +1,8 @@
 <footer class="bgnoir">
     <div class="width960 font16">
-
+        <div class="desktop">
         <?php include '_menu.php'; ?>
+        </div>
 
             <p class="blanc font14">La Poche à Pain
                 <br />by SARL MELTING K
@@ -27,7 +28,12 @@
 
 
 </div>
-
+<div id="bandeau-cookies" class="closed">
+    <p class="width960">
+        En poursuivant votre navigation sur ce site, vous acceptez que nous utilisions des cookies pour mesurer l'audience de notre site. Pour en savoir plus et paramétrer vos cookies, <a href="<?php echo $NAV_mentions; ?>" title="<?php echo $NAV_TITLE_mentions; ?>" class="closeCookies vertclair">cliquez ici</a>.
+    </p>
+    <button class="closeCookies"></button>
+</div>
 <!--[if lt IE 11]>
 			<script src="js/placeholder.js"></script>
         <![endif]-->
@@ -35,7 +41,6 @@
 <!--[if lt IE 9]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="js/slick/slick.min.js"></script>
@@ -60,13 +65,37 @@
                 return false;
             }
         });
+        
+        // FONCTION D'OUVERTURE / FERMETURE DU MENU
+        $('#bt-menu').on('click', function() {
+            $(this).closest('#header-top').toggleClass('ouvert');
+            $(this).closest('html').toggleClass('noscroll');
+        });
+        
+        // Vérification des cookies
+        checkCookies();
+        
+        // Fermeture du bandeau au clic
+        $('.closeCookies').on('click', function(){
+            if(typeof localStorage!='undefined') {
+                localStorage.setItem("cookies","accepted");
+            }
+            $('#bandeau-cookies').addClass('closed');
+        });
     });
+    
     function removeConsentement() {
         if (document.getElementById('consentement').checked) 
         {
             $('p.consentement').removeClass('error');
         } else {
             $('p.consentement').addClass('error');
+        }
+    }
+    function checkCookies() {
+        var cookies = localStorage.getItem("cookies");
+        if(cookies!='accepted' || !cookies.length()) {
+            $('#bandeau-cookies').removeClass('closed');
         }
     }
 </script>
