@@ -17,4 +17,13 @@
     
     <meta name="author" content="<?php echo $META_author; ?>" />
     <meta name="robots" content="<?php echo $META_robots; ?>" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-92991532-6"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-92991532-6');
+	</script>
 </head>

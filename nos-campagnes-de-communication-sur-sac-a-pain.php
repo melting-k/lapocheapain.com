@@ -145,7 +145,7 @@
             <section id="contact" class="bgblanc center">
                 <div class="width960">
                     <p class="mb25 font18 width720">Notre support vous intéresse et vous souhaitez des renseigements complémentaires ?</p>
-                    <a href="devis.php" class="bouton noir uppercase latobold font14">Contactez-nous</a>
+                    <a href="<?php echo $NAV_contact; ?>" title="<?php echo $NAV_TITLE_contact; ?>" class="bouton noir uppercase latobold font14">Contactez-nous</a>
                 </div>
             </section>
 
