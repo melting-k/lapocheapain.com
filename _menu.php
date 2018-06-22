@@ -12,6 +12,9 @@
         <li <?php if($PAGE_name == "contact" ) {echo "class='active'";}?>>
             <a href="<?php echo $NAV_contact; ?>" title="<?php echo $NAV_TITLE_contact; ?>">Demande de devis</a>
         </li>
+        <li>
+            <span class="desktop">05 61 55 12 11</span><a href="tel:0561551211" class="mobile">05 61 55 12 11</a>
+        </li>
     </ul>
 </nav>
 <button id="bt-menu" class="mobile">
