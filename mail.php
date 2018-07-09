@@ -2,7 +2,7 @@
 	if(isset($_POST['host']) && $_POST['host']=='OK')
     {
 		$page = $_POST['page'];
-		$TO = "com.meltingk@gmail.com";
+		$TO = "r.peyruc@lapocheapain.com";
 		$entete = "From: La Poche à Pain <contact@lapocheapain.com> \r\n";
 		$entete .= "Content-Type: text/plain; charset=\"UTF-8\"; DelSp=\"Yes\"; format=flowed \r\n";
 		$entete .= "Content-Disposition: inline \r\n";
