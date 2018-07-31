@@ -19,7 +19,7 @@
                 <br />Impression sur sacs à pain - Imprimerie poche à pain<br />Poches à pain publicitaire - Publicité sur sacs à pain<br />Publicité sur poche à pain Toulouse
                 <br />
                 <br />
-                <a href="http://www.melting-k.fr" target="_blank" title="Création de sites internet à Toulouse">Une création Melting K</a> - <a href="<?php echo $NAV_mentions; ?>" title="<?php echo $NAV_TITLE_mentions; ?>">Mentions légales</a>
+                <a href="http://www.melting-k.fr" target="_blank" title="Création de sites internet à Toulouse">Une création Melting K</a> - <a href="mentions-legales.php" title="<?php echo $NAV_TITLE_mentions; ?>">Mentions légales</a>
             </p>
             <a href="<?php echo $NAV_accueil; ?>" title="La Poche à Pain"><img src="svg/logo-footer.svg" alt="logo la Poche à Pain" width="150" /></a>
     </div>
@@ -30,7 +30,7 @@
 </div>
 <div id="bandeau-cookies" class="closed">
     <p class="width960">
-        En poursuivant votre navigation sur ce site, vous acceptez que nous utilisions des cookies pour mesurer l'audience de notre site. Pour en savoir plus et paramétrer vos cookies, <a href="<?php echo $NAV_mentions; ?>" title="<?php echo $NAV_TITLE_mentions; ?>" class="closeCookies vertclair">cliquez ici</a>.
+        En poursuivant votre navigation sur ce site, vous acceptez que nous utilisions des cookies pour mesurer l'audience de notre site. Pour en savoir plus et paramétrer vos cookies, <a href="mentions-legales.php" title="<?php echo $NAV_TITLE_mentions; ?>" class="closeCookies vertclair">cliquez ici</a>.
     </p>
     <button class="closeCookies"></button>
 </div>
