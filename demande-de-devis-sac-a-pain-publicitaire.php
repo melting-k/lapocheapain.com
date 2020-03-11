@@ -70,6 +70,7 @@
                                 En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la demande de contact, et de la relation commerciale pouvant en découler.
                             </p>
                             <br/>
+                            <div id="recaptcha"></div>
                             <input type="submit" value="ENVOYER" id="submit" class="bouton latobold font14 noir uppercase" />
                             <br/>
                             <p>

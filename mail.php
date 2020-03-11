@@ -1,6 +1,16 @@
 <?php
 	if(isset($_POST['host']) && $_POST['host']=='OK')
     {
+		if(isset($_POST['g-recaptcha-response']))
+		{
+		$captcha=$_POST['g-recaptcha-response'];
+		$secretKey = "6LeYbOAUAAAAAO-ihxCFMvVsC2BtW3mxa5jCOUWZ";
+		$ip = $_SERVER['REMOTE_ADDR'];
+		$response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
+		$responseKeys = json_decode($response,true);
+		if(intval($responseKeys["success"]) !== 1) {
+			Header("Location:https://www.lapocheapain.com/demande-de-devis-sac-a-pain-publicitaire.php");
+		}else{
 		$page = $_POST['page'];
 		$TO = "r.peyruc@lapocheapain.com";
 		$entete = "From: La Poche à Pain <contact@lapocheapain.com> \r\n";
@@ -25,6 +35,9 @@
 		$message .= "\nAttention, pour répondre à votre client, utilisez l'adresse mail qu'il vous a communiqué.";
 		mail($TO, $subject, utf8_decode(utf8_encode($message)), $entete);
 		Header("Location:".$page."?message=sent#devis");
+		}
+
+		}
 	}
 	else
 	{

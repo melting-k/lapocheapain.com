@@ -44,6 +44,16 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="js/slick/slick.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer>
+</script>
+<script type="text/javascript">
+    var onloadCallback = function() {
+    grecaptcha.render('recaptcha', {
+        'sitekey' : '6LeYbOAUAAAAABxFm01SoGQultoLVak22pkNQjsB'
+    });
+    };
+</script>
 
 <script type="text/javascript">
     $(document).ready(function() {
